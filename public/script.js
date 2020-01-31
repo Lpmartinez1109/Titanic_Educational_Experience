@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     var titanic = [];
     var passenger = [];
+    var timeline = [];
 
     function getTitanic() {
         $.get("/", function (data) {
@@ -16,6 +17,11 @@ $(document).ready(function(){
             passenger = data;
         })
     }
+  
+    function getTimeline(){
+      $.get("/timeline", function(data){
+          timeline = data;
+      })
 
 
 
@@ -25,4 +31,4 @@ $(document).ready(function(){
         document.location.href="/passengers";
     });
 
-})
+});
