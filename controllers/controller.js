@@ -7,5 +7,10 @@ router.get("/", function(req, res) {
         res.render('index', {titanic: dbTitanic})
     })
 });
+router.get("/passengers", function(req, res) {
+    db.Passenger.findAll({}).then((dbPassenger)=>{
+        res.render("passenger", {passengers: dbPassenger})
+    })
+});
 
 module.exports = router;
