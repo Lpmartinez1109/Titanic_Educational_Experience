@@ -12,5 +12,9 @@ router.get("/passengers", function(req, res) {
         res.render("passenger", {passengers: dbPassenger})
     })
 });
-
+router.get("/timeline", function(req,res){
+    db.Timeline.findAll({}).then((dbTimeline)=> {
+        res.render("timeline", {timeline:dbTimeline})
+    })
+})
 module.exports = router;
