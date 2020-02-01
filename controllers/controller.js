@@ -1,20 +1,32 @@
 var express = require("express");
 var router = express.Router();
-var db = require("../model/index");
+var db = require("../model");
+
+var passengers = [];
 
 router.get("/", function(req, res) {
-    db.Titanic.findAll({}).then((dbTitanic)=> {
-        res.render('index', {titanic: dbTitanic})
-    })
+    res.render('index');
+
 });
-router.get("/passengers", function(req, res) {
-    db.Passenger.findAll({}).then((dbPassenger)=>{
-        res.render("passenger", {passengers: dbPassenger})
-    })
+
+router.get("/passenger", function(req, res) {
+    db.Passenger.findAll({
+        where:{
+            id: 234
+        }
+    }).then(passenger => {
+        passengers.push(passenger[0].dataValues);
+
+        res.render("passenger", passenger[0].dataValues);
+    });
+    
 });
+
 router.get("/timeline", function(req,res){
-    db.Timeline.findAll({}).then((dbTimeline)=> {
-        res.render("timeline", {timeline:dbTimeline})
-    })
-})
+    res.render("timeline");
+
+});
+
+
+
 module.exports = router;
