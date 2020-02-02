@@ -18,6 +18,7 @@ router.get("/passenger", function(req, res) {
 
         res.render("passenger", passenger[0].dataValues);
     });
+});
 
 router.get("/timeline", function(req,res){
     res.render("timeline");
@@ -46,4 +47,4 @@ router.get("/timeline/sink", function(req,res){
 router.get("/fate", function(req,res){
         res.render("fate")
 });
-module.exports = router;
+module.exports = router
