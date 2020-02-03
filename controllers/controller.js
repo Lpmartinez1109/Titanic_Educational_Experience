@@ -1,32 +1,58 @@
 var express = require("express");
 var router = express.Router();
 var db = require("../model");
+
 var passengers = [];
+var passByID = [234, 686, 194, 807, 357];
+for (i = 0; i < passByID.length; i++){
+    db.Passenger.findAll({
+        where:{
+            id: passByID[i]
+        }
+        
+    }).then(passenger => {
+        passengers.push(passenger[0].dataValues);
+        
+    });
+    
+}
+
+router.get("/passenger", function(req, res) {
+    // console.log(passengers);
+    res.render("passenger", passengers);
+    console.log(passengers);
+});
+
+
 
 router.get("/", function(req, res) {
     res.render('index');
 
 });
 
-router.get("/passenger", function(req, res) {
-    db.Passenger.findAll({
-        where:{
-            id: 234
-        }
-    }).then(passenger => {
-        passengers.push(passenger[0].dataValues);
-        res.render("passenger", passenger[0].dataValues);
-    });
+// router.get("/passenger", function(req, res) {
+//     db.Passenger.findAll({
+//         where:{
+//             id: 234
+//         }
+//     }).then(passenger => {
+//         passengers.push(passenger[0].dataValues);
+//         res.render("passenger", passenger[0].dataValues);
+//     });
 
-    // db.Passenger.findAll({
-    //     where:{
-    //         id: 686
-    //     }
-    // }).then(passenger => {
-    //     passengers.push(passenger[0].dataValues);
+//     db.Passenger.findAll({
+//         where:{
+//             id: 686
+//         }
+//     }).then(passenger => {
+//         passengers.push(passenger[0].dataValues);
 
-    //     res.render("passenger", passenger[0].dataValues);
-    // });
+//         res.render("passenger", passenger[0].dataValues);
+//     });
+
+//     console.log(passengers);
+    
+
 
     // db.Passenger.findAll({
     //     where:{
@@ -60,7 +86,7 @@ router.get("/passenger", function(req, res) {
     // console.log(passengers);
 
     
-});
+// });
 
 router.get("/timeline", function(req,res){
     res.render("timeline");
