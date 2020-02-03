@@ -2,6 +2,20 @@ var express = require("express");
 var router = express.Router();
 var db = require("../model");
 var passengers = [];
+var passByID = [234, 686, 536, 807, 357];
+var i = passByID;
+
+for(i=0; i<passByID.length; i++){
+
+        db.Passenger.findAll({
+                where:{
+                id: passByID[i]
+                }
+        }).then(passenger => {
+                passengers.push(passenger[0].dataValues);
+
+        });
+}
 
 router.get("/", function(req, res) {
     res.render('index');
@@ -9,15 +23,7 @@ router.get("/", function(req, res) {
 });
 
 router.get("/passenger", function(req, res) {
-    db.Passenger.findAll({
-        where:{
-            id: 234
-        }
-    }).then(passenger => {
-        passengers.push(passenger[0].dataValues);
-
-        res.render("passenger", passenger[0].dataValues);
-    });
+        res.render("passenger", passengers);
 });
 
 router.get("/timeline", function(req,res){
