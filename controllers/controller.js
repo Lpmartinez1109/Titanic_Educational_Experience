@@ -1,7 +1,9 @@
 var express = require("express");
 var router = express.Router();
-var db = require("../model");
+var db = require("../model");;
+var images = require("../db/images.json");
 var passByID = [234, 686, 536, 807, 357];
+var passByName = []
 
 router.get("/", function(req, res) {
     res.render('index');
@@ -14,6 +16,15 @@ router.get("/passenger", function(req, res) {
                 }
         }).then(passenger => {
                 console.log(passenger);
+                // images from wiki
+                console.log(images);
+                for (i=0; i<passByID.length; i++){
+                if(passenger[i].dataValues.Passengerid === images[i].id){
+                        passenger[i].image = images[i].img1
+                }
+                }
+                console.log(passenger);
+
                 res.render("passenger", {passengers:passenger});
 });
 });

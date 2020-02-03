@@ -62,5 +62,25 @@ $(document).ready(function(){
         console.log("clicked");
             document.location.href="/timeline";
     });
+    $(document).on("click", "#686", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
+    $(document).on("click", "#536", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
+    $(document).on("click", "#807", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
+    $(document).on("click", "#357", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
 
 });
