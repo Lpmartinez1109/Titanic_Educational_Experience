@@ -27,4 +27,10 @@ $(document).ready(function(){
         document.location.href="/passenger";
     });
 
+    $(document).on("click", "#234", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
+
 });
