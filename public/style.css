@@ -106,7 +106,7 @@
     float: left;
 	overflow: hidden;
     padding-bottom: 500px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .ss-container h2{
     font-size: 40px;
@@ -183,6 +183,7 @@ a:hover{
     position: relative;
 }
 .footer{
+    /* background-color:white; */
     position: relative;
     left: 0;
     bottom: 0;
