@@ -2,6 +2,7 @@
     font-family: 'Lora', serif;
 }
 
+/* main page */
 .header {
     height: fit-content;
     text-align: left;
@@ -95,6 +96,9 @@
     line-height: 20px;
 }
 
+/* passenger page */
+
+/* timeline page */
 .ss-container{
     width: 100%;
     position: relative;

@@ -1,60 +1,52 @@
 $(document).ready(function(){
-    // var titanic = [];
-    // var passenger = [];
-    // var timeline = [];
-
-    // function getTitanic() {
-    //     $.get("/", function (data) {
-    //         titanic = data;
-    //     });
-        
-    // }
-    // function getPassenger(){
-    //     $.get("/passengers", function(data){
-    //         passenger = data;
-    //     });
-    // }
-  
-    // function getTimeline(){
-    //   $.get("/timeline", function(data){
-    //       timeline = data;
-    //     });
-    // }
 
     $(document).on("click", ".btn", function(event){
-    event.preventDefault(); 
-    console.log("clicked");
+        event.preventDefault(); 
+        console.log("clicked");
         document.location.href="/passenger";
     });
-    $(document).on("click", "#information", function (event) {
-        event.preventDefault(); 
-    console.log("clicked");
-        document.location.href="/timeline/information";
-    });
-    $(document).on("click", "#shipfacts", function (event) {
+    $(document).on("click", "#ship", function (event) {
         event.preventDefault(); 
     console.log("clicked");
         document.location.href="/timeline/ship";
-    });
-    $(document).on("click", "#classinfo", function (event) {
-        event.preventDefault(); 
-    console.log("clicked");
-        document.location.href="/timeline/class";
     });
     $(document).on("click", "#activities", function (event) {
         event.preventDefault(); 
     console.log("clicked");
         document.location.href="/timeline/activities";
     });
-    $(document).on("click", "#nightlife", function (event) {
+    $(document).on("click", "#lodging", function (event) {
         event.preventDefault(); 
     console.log("clicked");
-        document.location.href="/timeline/nightlife";
+        document.location.href="/timeline/lodging";
+    });
+    $(document).on("click", "#dining", function (event) {
+        event.preventDefault(); 
+    console.log("clicked");
+        document.location.href="/timeline/dining";
+    });
+    $(document).on("click", "#sink", function (event) {
+        event.preventDefault(); 
+    console.log("clicked");
+        document.location.href="/timeline/sink";
     });        
     $(document).on("click", "#fate", function (event) {
         event.preventDefault(); 
     console.log("clicked");
         document.location.href="/fate";
     });        
+
+    $(document).on("click", "#234", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+            document.location.href="/timeline";
+    });
+
+    $(document).on("click", ".passenger-img", function(event){
+        event.preventDefault(); 
+        console.log("clicked");
+        document.location.href="/timeline";
+    });
+
 
 });
