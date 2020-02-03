@@ -16,6 +16,7 @@ router.get("/passenger", function(req, res) {
                 console.log(passenger);
                 res.render("passenger", {passengers:passenger});
 });
+});
 router.get("/timeline", function(req,res){
     res.render("timeline");
 });
