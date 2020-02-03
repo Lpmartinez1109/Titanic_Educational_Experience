@@ -35,7 +35,7 @@ Object.keys(params).forEach(function(key){url += "&" + key + "=" + params[key];}
 
 fetch(url)
     .then(function(response){return response.json();})
-    // .then(function(response) {console.log(response[3][0]);})
-    .then(function(response) {$("#article").attr("src", response[3][0]);})
+    .then(function(response) {console.log(response[3][0]);})
+    // .then(function(response) {$("#article").attr("src", response[3][0]);})
     .catch(function(error){console.log(error);});
 });
