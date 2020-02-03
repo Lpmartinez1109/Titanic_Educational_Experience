@@ -17,7 +17,8 @@ router.get("/passenger", function(req, res) {
         passengers.push(passenger[0].dataValues);
 
         res.render("passenger", passenger[0].dataValues);
-    });
+    })
+});
 
 router.get("/timeline", function(req,res){
     res.render("timeline");
