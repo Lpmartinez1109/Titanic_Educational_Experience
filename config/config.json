@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Destroyer?",
+    "password": "root",
     "database": "titanic_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -16,11 +16,12 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "Destroyer?",
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "ujmba9w4cks5fhqo",
+    "password": "p7n23ie46uerwdox",
+    "database": "zj7db0sj9ksbqaz0",
+    "host": "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
+    "use_env_varable": "JAWSDB_URL",
     "operatorsAliases": false
   }
 }
