@@ -2,16 +2,15 @@
 {{!-- [234, 686, 536, 807, 357] --}}
 <div class="container">
     {{#each passengers}}
-    <div class="passenger-slides">
+        <div class="passenger-slides">
         
-        <img src="{{image}}" style="width:75px" id="{{dataValues.Passengerid}}">
-        
+            <img src="{{image}}" style="width:75px" id="{{dataValues.Passengerid}}">
 
-        <h3>{{dataValues.Name}}</h3>
-        <h4>Age: {{dataValues.Age}}</h4>
-        <h4>Gender: {{dataValues.Sex}}</h4>
-        <h4>Class: {{dataValues.Pclass}}</h4>
-    </div>
+            <h3>{{dataValues.Name}}</h3>
+            <h4>Age: {{dataValues.Age}}</h4>
+            <h4>Gender: {{dataValues.Sex}}</h4>
+            <h4>Class: {{dataValues.Pclass}}</h4>
+        </div>
 
     {{/each }}
     {{!-- {{/each}} --}}
