@@ -1,6 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
     var Passenger = sequelize.define("Passenger", {
-        Passengerid: DataTypes.INTEGER,
+        Passengerid: {
+            type:DataTypes.INTEGER,
+        primaryKey:true},
         Survived: DataTypes.INTEGER,
         Pclass: DataTypes.INTEGER,
         Name: DataTypes.STRING,
