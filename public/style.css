@@ -108,6 +108,10 @@
     /* padding-bottom: 500px; */
     /* z-index: -1; */
     border-bottom: 4px solid red;
+    background-image: url(https://wallpapercave.com/wp/XqRBXyO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .ss-container h2{
     font-size: 40px;
@@ -150,19 +154,10 @@
 span{
     color: black;
     /* font-size: 15px; */
+    text-shadow: 0 0 11px rgba(33,33,33, 0.8);
+
 }
-/* a{
-    text-decoration: none;
-}
-a:link{
-    color: black;
-}
-a.visited{
-    color: black;
-}
-a:hover{
-    color: black;
-} */
+
 .timeline-body-left{
     border: 2px solid black;
     font-size: 12px;
@@ -170,6 +165,8 @@ a:hover{
     float: right;
     width: 50%;
     position: relative;
+    /* background: rgba(222, 220, 200, 0.815); */
+
 }
 .timeline-body-right{
     border: 2px solid black;
@@ -178,6 +175,8 @@ a:hover{
     float: left;
     width: 50%;
     position: relative;
+    /* background: rgba(211, 211, 211, 0.5) */
+
 }
 .timeline-body-left:hover{
     box-shadow: 0 0 11px rgba(33,33,33, 0.5);
