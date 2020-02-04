@@ -62,11 +62,5 @@ $(document).ready(function(){
             document.location.href="/timeline";
     });
 
-    $(document).on("click", ".passenger-img", function(event){
-        event.preventDefault(); 
-        console.log("clicked");
-        document.location.href="/timeline";
-    });
-
 
 });
