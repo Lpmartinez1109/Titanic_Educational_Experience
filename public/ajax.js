@@ -21,13 +21,6 @@
 $(document).ready(function () {
     var userInput = $("#wiki-search");
 
-
-
-
-
-
-
-
     function wikiSearch() {
         $("#wikipedia").on("click", function (event) {
             var passenger = userInput.val();
