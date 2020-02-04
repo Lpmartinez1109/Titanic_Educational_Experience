@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 var db = require("../model");;
 var images = require("../db/images.json");
-var passByID = [234, 686, 536, 807, 357];
+var passByID = [234, 357, 536, 686, 807];
 var passByName = []
 
 router.get("/", function(req, res) {
@@ -16,21 +16,25 @@ router.get("/passenger", function(req, res) {
                 Passengerid: passByID
                 }
         }).then(passenger => {
-                console.log(passenger);
+                // console.log(passenger);
                 // images from wiki
-                console.log(images);
+                console.log("This is a string", images[0]);
                 for (i=0; i<passByID.length; i++){
-                if(passenger[i].dataValues.Passengerid === images[i].id){
+                        console.log(passenger[i].dataValues.Passengerid, images[i].id)
+                if(passenger[i].dataValues.Passengerid == images[i].id){
+                        console.log(`Hit Number ${i}`)
                         passenger[i].image = images[i].img1
                 }
                 }
-                console.log(passenger);
+                // console.log(passenger);
 
                 res.render("passenger", {passengers:passenger});
 });
 
 });
 router.get("/timeline", function(req,res){
+        // console.log(req.params.id)
+        // id=req.params.id
     res.render("timeline");
 });
 
