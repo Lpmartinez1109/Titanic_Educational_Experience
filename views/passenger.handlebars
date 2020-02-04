@@ -4,11 +4,66 @@
 
     {{#each passengers}}
         <div class="passenger-slides">
+
             <img  class="passenger-img" src="{{image}}" style="width:75px" id="{{dataValues.Passengerid}}">
+
             <h3>{{dataValues.Name}}</h3>
             <h4>Age: {{dataValues.Age}}</h4>
             <h4>Gender: {{dataValues.Sex}}</h4>
             <h4>Class: {{dataValues.Pclass}}</h4>
+
+        </div>
+
+    {{/each }}
+    {{!-- {{/each}} --}}
+
+
+    {{!-- <div class="passenger-slides">
+        <img src="https://picsum.photos/200/300" style="width:75px">
+        <h3>Name</h3>
+        <h4>Age</h4>
+        <h4>Gender</h4>
+        <h4>Class</h4>
+    </div>
+    <div class="passenger-slides">
+        <img src="https://picsum.photos/200/300" style="width:75px">
+        <h3>Name</h3>
+        <h4>Age</h4>
+        <h4>Gender</h4>
+        <h4>Class</h4>
+    </div>
+    <div class="passenger-slides">
+        <img src="https://picsum.photos/200/300" style="width:75px">
+        <h3>Name</h3>
+        <h4>Age</h4>
+        <h4>Gender</h4>
+        <h4>Class</h4>
+    </div>
+    <div class="passenger-slides">
+        <img src="https://picsum.photos/200/300" style="width:75px">
+        <h3>Name</h3>
+        <h4>Age</h4>
+        <h4>Gender</h4>
+        <h4>Class</h4>
+    </div> --}}
+
+
+    {{!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> --}}
+
+    {{!-- <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="cursor" src="https://picsum.photos/200/300" style="width:10px"  onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+            <img class="cursor" src="https://picsum.photos/200/300" style="width:10px"  onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+            <img class="cursor" src="https://picsum.photos/200/300" style="width:10px"  onclick="currentSlide(3)" alt="">
         </div>
     {{/each }}
 

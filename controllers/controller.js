@@ -31,6 +31,7 @@ router.get("/passenger", function(req, res) {
 
 router.get("/timeline", function(req,res){
         res.render("timeline");
+
 });
 
 router.get("/timeline/ship", function(req,res){
