@@ -16,6 +16,8 @@ router.get("/passenger", function(req, res) {
                 }
         }).then(passenger => {
                 // images from wiki
+                console.log(passenger[0].dataValues);
+                
                 for (i=0; i<passByID.length; i++){
                         if(passenger[i].dataValues.Passengerid == images[i].id){
                                 passenger[i].image = images[i].img1
