@@ -1,23 +1,30 @@
- [
+[
     {
         "id": 234,
-        "img1": "./images/passengers/Lillian_Asplund.jpg"
+        "img1": "./images/passengers/Lillian_Asplund.jpg",
+        "name": "Lillian Asplund"
     },
     {
         "id": 357,
-        "img1": "./images/passengers/Elsie_Bowerman.jpg"
+        "img1": "./images/passengers/Elsie_Bowerman.jpg",
+        "name": "Elsie Bowerman"
     },
     {
         "id": 536,
-        "img1": "./images/passengers/Eva_Hart.jpg"
+        "img1": "./images/passengers/Eva_Hart.jpg",
+        "name": "Eva Hart"
     },
     {
         "id": 686,
-        "img1": "./images/passengers/Joseph_Laroche.jpg"
+        "img1": "./images/passengers/Joseph_Laroche.jpg",
+        "name": "Joseph Laroche"
     },
     {
         "id": 807,
-        "img1": "./images/passengers/Thomas_Andrews.jpg"
+        "img1": "./images/passengers/Thomas_Andrews.jpg",
+        "name": "Thomas Andrews"
     }
 ]
+
+
 

@@ -49,12 +49,4 @@ $(document).ready(function(){
         event.preventDefault(); 
         document.location.href="/timeline";
     });
-
-    $(document).on("click", ".passenger-img", function(event){
-        event.preventDefault(); 
-        document.location.href="/timeline";
-    });
-
-
-
 });
