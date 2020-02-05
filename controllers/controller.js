@@ -36,19 +36,19 @@ router.get("/timeline", function(req,res){
 
 });
 
-router.get("/timeline/ship", function(req,res){
+router.get("/ship", function(req,res){
         res.render("ship")
 });
-router.get("/timeline/activities", function(req,res){
+router.get("/activities", function(req,res){
         res.render("activities")
 });
-router.get("/timeline/lodging", function(req,res){
+router.get("/lodging", function(req,res){
         res.render("lodging")
 });
-router.get("/timeline/dining", function(req,res){
+router.get("/dining", function(req,res){
         res.render("dining")
 });
-router.get("/timeline/sink", function(req,res){
+router.get("/sink", function(req,res){
         res.render("sink")
 });
 router.get("/fate", function(req,res){
