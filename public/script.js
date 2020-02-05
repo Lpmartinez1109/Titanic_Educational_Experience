@@ -6,23 +6,23 @@ $(document).ready(function(){
     });
     $(document).on("click", "#ship", function (event) {
         event.preventDefault(); 
-        document.location.href="/timeline/ship";
+        document.location.href="/ship";
     });
     $(document).on("click", "#activities", function (event) {
         event.preventDefault(); 
-        document.location.href="/timeline/activities";
+        document.location.href="/activities";
     });
     $(document).on("click", "#lodging", function (event) {
         event.preventDefault(); 
-        document.location.href="/timeline/lodging";
+        document.location.href="/lodging";
     });
     $(document).on("click", "#dining", function (event) {
         event.preventDefault(); 
-        document.location.href="/timeline/dining";
+        document.location.href="/dining";
     });
     $(document).on("click", "#sink", function (event) {
         event.preventDefault(); 
-        document.location.href="/timeline/sink";
+        document.location.href="/sink";
     });        
     $(document).on("click", "#fate", function (event) {
         event.preventDefault(); 
