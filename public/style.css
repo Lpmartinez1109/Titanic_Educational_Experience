@@ -257,7 +257,8 @@ span{
 }
 .p-title {
     font-size: 30px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
 .pass-card {
     grid-column-start: auto;
@@ -266,8 +267,8 @@ span{
     grid-row-end: 2;
     height: 60px;
     width: 60px;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     text-align: center;
     margin: 30px 10px;
     padding: 10px 0;
