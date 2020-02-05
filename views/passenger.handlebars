@@ -1,21 +1,17 @@
-<h1>Choose A Passenger from Below: </h1>
-<div class="container">
-
-<div class="data-slides">
-
-    {{#each passengers}}
-        <div class="passenger-slides">
-
-            <img  class="passenger-img" src="{{image}}" style="width:75px" id="{{dataValues.Passengerid}}">
-
-            <h3>{{dataValues.Name}}</h3>
-            <h4>Age: {{dataValues.Age}}</h4>
-            <h4>Gender: {{dataValues.Sex}}</h4>
-            <h4>Class: {{dataValues.Pclass}}</h4>
-
-        </div>
-
-
-    {{/each }}
+<div class="pass-container">
+    <div class="p-header">
+        <p class="p-title">Choose A Passenger from Below: </p>
+    </div>
+        {{#each passengers}}
+            <div class="pass-card" id="{{dataValues.Passengerid}}">
+                <img  class="passenger-img" src="{{image}}" style="width:50%" id="{{dataValues.Passengerid}}">
+                <div class="text">
+                    <h3 class="pH3">{{dataValues.Name}}</h3>
+                    <h4>Age: {{dataValues.Age}}</h4>
+                    <h4>Gender: {{dataValues.Sex}}</h4>
+                    <h4>Class: {{dataValues.Pclass}}</h4>
+                </div>
+            </div>
+        {{/each }}
+    <footer class="p-footer"></footer>
 </div>
-</div> 

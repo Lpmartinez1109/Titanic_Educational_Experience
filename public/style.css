@@ -1,5 +1,9 @@
-.body {
+body {
     font-family: 'Lora', serif;
+    background-image: url(https://wallpapercave.com/wp/XqRBXyO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* main page */
@@ -35,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-template-rows: auto 25% 25% auto auto;
-    grid-column-gap: 30px
+    /* grid-column-gap: 30px */
 }
 .background-img{
     grid-column-start: 1;
@@ -113,6 +117,8 @@
     text-align: center;
     padding: 20px;
     line-height: 20px;
+    background-color: white;
+    margin-top: 5px;
 }
 .cardH1 {
     font-size: 20px;
@@ -133,11 +139,11 @@
 	overflow: hidden;
     /* padding-bottom: 500px; */
     /* z-index: -1; */
-    border-bottom: 4px solid red;
+    /* border-bottom: 4px solid red;
     background-image: url(https://wallpapercave.com/wp/XqRBXyO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 .ss-container h2{
     font-size: 40px;
@@ -222,4 +228,142 @@ span{
     text-align: center;
     font-size: 35px;
     z-index: -1;
+}
+
+/* passenger page */
+.pass-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: auto auto 100% auto;
+    grid-column-gap: 10px;
+    /* background-image: url(https://wallpapercave.com/wp/XqRBXyO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.p-header {
+    height: fit-content;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: red;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    filter: saturate(50%);
+}
+.p-title {
+    font-size: 30px;
+    padding: 10px
+}
+.pass-card {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 60px;
+    width: 60px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 30px 10px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.473);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.text {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.pH3 {
+    color: red;
+    filter: saturate(50%);
+}
+
+/* timeline pages */
+
+.tlp-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: auto auto auto;
+}
+.tlp-header {
+    height: fit-content;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: red;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    filter: saturate(50%);
+}
+.tlp-title {
+    font-size: 30px;
+    padding: 10px
+}
+.tlp-card {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: rgba(255, 255, 255, 0.473);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    margin: 50px 0;
+    padding: 30px;
+}
+.tlp-head {
+    color: red;
+    filter: saturate(50%);
+    font-size: 40px;
+}
+.tlp-p {
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+/* fate */
+
+.f-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: auto auto auto;
+}
+.f-header {
+    height: fit-content;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: red;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    filter: saturate(50%);
+}
+.f-title {
+    font-size: 30px;
+    padding: 10px
+}
+.f-card {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;;
+    margin: 10px 20px;
+}
+#article {
+    margin-top: 20px;
 }
