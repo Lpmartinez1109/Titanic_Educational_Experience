@@ -23,16 +23,7 @@ body {
 }
 .title {
     font-size: 30px;
-    padding: 10px
-}
-.data-slides{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    grid-column-gap: auto;
-}
-.passenger-slides{
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
     text-align: center;
 }
 .main {
@@ -231,6 +222,16 @@ span{
 }
 
 /* passenger page */
+.data-slides{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-column-gap: auto;
+}
+.passenger-slides{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .pass-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -257,8 +258,10 @@ span{
 }
 .p-title {
     font-size: 30px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
+
 .pass-card {
     grid-column-start: auto;
     grid-column-end: auto;
@@ -266,8 +269,8 @@ span{
     grid-row-end: 2;
     height: 60px;
     width: 60px;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     text-align: center;
     margin: 30px 10px;
     padding: 10px 0;
@@ -310,7 +313,8 @@ span{
 }
 .tlp-title {
     font-size: 30px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
 .tlp-card {
     grid-column-start: 2;
@@ -355,7 +359,8 @@ span{
 }
 .f-title {
     font-size: 30px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
 .f-card {
     grid-column-start: 1;
