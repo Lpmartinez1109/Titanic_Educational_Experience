@@ -177,44 +177,46 @@ body {
 }
 .ss-right{
     padding-left: 2%;
+    cursor: pointer;
 }
 .ss-left{
     text-align: right;
     float: left;
     padding-right: 2%;
+    cursor: pointer;
 }
 span{
     color: black;
-    /* font-size: 15px; */
+    font-size: 75px;
     font-family: "Jim Nightshade", cursive;
     text-shadow: 0 0 11px rgba(33,33,33, 0.8);
 
 }
 
-.timeline-body-left{
-    border: 2px solid black;
-    font-size: 12px;
-    color: black;
-    float: right;
-    width: 50%;
-    position: relative;
+.timeline-left{
+    /* border: 2px solid black; */
+    /* font-size: 12px; */
+    /* color: black; */
+    /* float: right; */
+    /* width: 75%; */
+    /* position: relative; */
     /* background: rgba(222, 220, 200, 0.815); */
 
 }
-.timeline-body-right{
-    border: 2px solid black;
-    font-size: 12px;
-    color: black;
-    float: left;
-    width: 50%;
-    position: relative;
+.timeline-right{
+    /* border: 2px solid black; */
+    /* font-size: 12px; */
+    /* color: black; */
+    /* float: left; */
+    /* width: 50%; */
+    /* position: relative; */
     /* background: rgba(211, 211, 211, 0.5) */
 
 }
-.timeline-body-left:hover{
+.timeline-left:hover{
     box-shadow: 0 0 11px rgba(33,33,33, 0.5);
 }
-.timeline-body-right:hover{
+.timeline-right:hover{
     box-shadow: 0 0 11px rgba(33,33,33, 0.5);
 }
 
@@ -222,6 +224,26 @@ span{
     text-align: center;
     border-bottom: 2px solid red;
     font-size: 35px;
+}
+.ship-img {
+    width: 95%;
+    height: auto;
+}
+.activities-img {
+    width: 95%;
+    height: auto;
+}
+.loding-img {
+    width: 80%;
+    height: auto;
+}
+.dining-img {
+    width: 95%;
+    height: auto;
+}
+.sink-img {
+    width: 95%;
+    height: auto;
 }
 .footer {
     /* border-top: 2px solid red; */
