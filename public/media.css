@@ -1,0 +1,53 @@
+@media (min-width: 320px) and (max-width: 1024px){
+    .title {
+        font-size: 50px;
+    }
+    .card-head {
+        font-size: 40px;
+    }
+    .card-subhead {
+        font-size: 35px;
+    }
+    .description {
+        font-size: 30px;
+    }
+    .btn {
+        font-size: 25px;
+    }
+    .main {
+        grid-template-rows: auto 25% 25% auto auto auto auto;
+    }
+    .card {
+        margin: 20px 150px;
+    }
+    .sm-card1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .sm-card2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .sm-card3 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .sm-card{
+        padding: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .cardH1 {
+        font-size: 40px;
+    }
+    .cardP {
+        font-size: 35px;
+    }
+
+}
